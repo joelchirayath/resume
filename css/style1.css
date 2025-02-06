@@ -1,0 +1,30 @@
+.dev-icons {
+    display: flex;
+    gap: 10px; /* Slightly increased space between icons */
+}
+
+.list-inline-item {
+    position: relative;
+    font-size: 3.5rem; /* Increased icon size */
+    cursor: pointer;
+}
+
+.icon-name {
+    position: absolute;
+    bottom: -17px; /* Adjusted position to fit with the larger icons */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.7rem; /* Smaller text size */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.1s ease-in-out;
+}
+
+.list-inline-item:hover .icon-name {
+    opacity: 1;
+    visibility: visible;
+}
